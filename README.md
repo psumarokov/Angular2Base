@@ -22,3 +22,4 @@ Backlog
 Links
 --------
 - Angular 2 Tutorial: https://angular.io/docs/ts/latest/tutorial/
+- ES6 Promises: http://www.datchley.name/es6-promises/
