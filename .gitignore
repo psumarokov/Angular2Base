@@ -1,0 +1,15 @@
+# libraries
+node_modules
+
+# IDE files
+.idea
+*.iml
+
+# Log files
+*.log
+
+typings
+
+# JS and Map files
+*.js
+*.map
