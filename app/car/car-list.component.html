@@ -1,0 +1,6 @@
+<ul class="cars">
+    <li *ngFor="#car of cars" (click)="onSelect(car)" [class.selected]="car === selectedCar">
+        <span class="badge">{{car.id}}</span> {{car.name}}
+    </li>
+</ul>
+<car-details [car]="selectedCar"></car-details>
