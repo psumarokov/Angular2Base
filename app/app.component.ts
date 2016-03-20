@@ -3,6 +3,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 
 import {CarService} from './car/car.service';
 import {CarListComponent} from './car/car-list.component';
+import {TopCarsComponent} from './car/top-cars.component';
 
 @Component({
     selector: 'base-app',
@@ -15,6 +16,12 @@ import {CarListComponent} from './car/car-list.component';
         path: '/cars',
         name: 'Cars',
         component: CarListComponent
+    },
+    {
+        path: '/top-cars',
+        name: 'Top Cars',
+        component: TopCarsComponent,
+        useAsDefault: true
     }
 ])
 export class AppComponent {
