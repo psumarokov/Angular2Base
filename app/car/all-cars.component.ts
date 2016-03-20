@@ -1,5 +1,4 @@
 import {Component} from 'angular2/core'
-
 import {OnInit} from 'angular2/core';
 
 import {Car} from './car';
@@ -10,12 +9,12 @@ import {CarComponent} from './car.component';
     selector: 'car-list',
     templateUrl: 'app/car/all-cars.html',
     styleUrls: ['static/style/master.css'],
-    directives: [CarComponent],
-    providers: [CarService]
+    directives: [CarComponent]
 })
 export class AllCarsComponent implements OnInit {
-    public cars: Car[];
-    public selectedCar: Car;
+
+    cars: Car[];
+    selectedCar: Car;
 
     constructor(private _carService: CarService) {}
 

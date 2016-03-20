@@ -1,0 +1,8 @@
+<h3>Top Cars</h3>
+<div class="grid grid-pad">
+    <div *ngFor="#car of topCars" (click)="openDetails(car)" class="col-1-4">
+        <div class="module car">
+            <h4>{{car.name}}</h4>
+        </div>
+    </div>
+</div>
