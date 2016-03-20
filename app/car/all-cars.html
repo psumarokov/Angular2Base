@@ -3,4 +3,9 @@
         <span class="badge">{{car.id}}</span> {{car.name}}
     </li>
 </ul>
-<car-details [car]="selectedCar"></car-details>
+<div *ngIf="selectedCar">
+    <h2>
+        {{selectedCar.name | uppercase}} is my car of choice
+    </h2>
+    <button (click)="showDetails()">Show Details</button>
+</div>

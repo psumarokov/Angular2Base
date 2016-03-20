@@ -1,4 +1,5 @@
-import { Component } from 'angular2/core';
+import {Component} from 'angular2/core';
+import {Router} from 'angular2/router';
 
 import {Car} from './car';
 import {CarService} from './car.service';
@@ -11,7 +12,10 @@ export class TopCarsComponent {
 
     topCars: Car[];
 
-    constructor(private _carService: CarService) { }
+    constructor(
+        private _carService: CarService,
+        private _router: Router) {
+    }
 
     ngOnInit() {
         this._carService.getCars()
@@ -22,7 +26,8 @@ export class TopCarsComponent {
         this.topCars = cars.slice(1,5)
     }
 
-    openDetails() {
-
+    openDetails(car: Car) {
+        let link = ['Car Details', { id: car.id }];
+        this._router.navigate(link);
     }
 }
