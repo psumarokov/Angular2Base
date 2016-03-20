@@ -2,20 +2,20 @@ import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 import {CarService} from './car/car.service';
-import {CarListComponent} from './car/car-list.component';
+import {AllCarsComponent} from './car/all-cars.component';
 import {TopCarsComponent} from './car/top-cars.component';
 
 @Component({
     selector: 'base-app',
-    templateUrl: 'app/app.component.html',
+    templateUrl: 'app/app.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [CarService, ROUTER_PROVIDERS]
 })
 @RouteConfig([
     {
-        path: '/cars',
-        name: 'Cars',
-        component: CarListComponent
+        path: '/all-cars',
+        name: 'All Cars',
+        component: AllCarsComponent
     },
     {
         path: '/top-cars',

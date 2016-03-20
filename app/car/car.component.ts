@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {Car} from './car';
 
 @Component({
-    templateUrl: 'app/car/car.component.html',
+    templateUrl: 'app/car/car.html',
     selector: 'car-details',
     inputs: ['car']
 })

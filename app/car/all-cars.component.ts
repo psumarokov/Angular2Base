@@ -8,12 +8,12 @@ import {CarComponent} from './car.component';
 
 @Component({
     selector: 'car-list',
-    templateUrl: 'app/car/car-list.component.html',
+    templateUrl: 'app/car/all-cars.html',
     styleUrls: ['static/style/master.css'],
     directives: [CarComponent],
     providers: [CarService]
 })
-export class CarListComponent implements OnInit {
+export class AllCarsComponent implements OnInit {
     public cars: Car[];
     public selectedCar: Car;
 
